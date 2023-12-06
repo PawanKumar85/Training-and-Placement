@@ -1,6 +1,6 @@
 # [Assignment_02](https://classroom.google.com/u/1/c/NjIyMTg5NDc5MTk0/a/NTI0MjExMTU5MjYz/details)
 
-## Code01
+## [Code-01](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code01.c)
 
 _1 . Write a C program to find maximum between two numbers using conditional operator._
 
@@ -20,7 +20,7 @@ int main()
 }
 ```
 
-## Code02
+## [Code-02](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code02.c)
 
 _2. Write a C program to find maximum between three numbers using conditional operator._
 
@@ -46,7 +46,7 @@ int main()
 }
 ```
 
-## Code03
+## [Code-03](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code03.c)
 
 _3. Write a C program to check whether a number is even or odd using conditional operator._
 
@@ -74,7 +74,7 @@ int main()
 }
 ```
 
-## Code04
+## [Code-04](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code04.c)
 
 _4. Write a C program to check whether year is leap year or not using conditional operator._
 
@@ -101,7 +101,7 @@ int main()
 }
 ```
 
-## Code05
+## [Code-05](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code05.c)
 
 _5. Write a C program to check whether character is an alphabet or not using conditional
 operator._
@@ -122,7 +122,7 @@ int main()
 }
 ```
 
-## Code06
+## [Code-06](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code06.c)
 
 _6. Write a C program to swap two numbers using bitwise operator._
 
@@ -143,7 +143,7 @@ int main()
 }
 ```
 
-## Code07
+## [Code-07](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code07.c)
 
 _7. Write a C program to performs mathematical operations such as addition, subtraction,
 multiplication, division etc on numerical values (constants and variables)._
@@ -165,7 +165,7 @@ int main()
 }
 ```
 
-## Code08
+## [Code-08](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code08.c)
 
 _8.  Write a C program A relational operator checks the relationship between two operands. 
 If the relation is true, it returns 1; if the relation is false, it returns value 0._
@@ -194,7 +194,7 @@ int main() {
 
 ```
 
-## Code09
+## [Code-09](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code09.c)
 
 _9. An expression containing logical operator returns either 0 or 1 depending upon whether
 expression results true or false. Logical operators are commonly used in decision making in C
@@ -220,7 +220,7 @@ int main() {
 
 ```
 
-## Code10
+## [Code-10](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code10.c)
 
 _10. Write a C program to enter a four digit number and print all digit_
 
@@ -248,7 +248,7 @@ int main()
 }
 ```
 
-## Code11
+## [Code-11](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code11.c)
 
 _11. Write a C program to enter a five digit number and find sum and difference of all digit._
 
@@ -282,7 +282,7 @@ int main()
 }
 ```
 
-## Code12
+## [Code-12](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assigenment02/code12.c)
 
 _12. Write a C program to enter a five digit number and find sum and difference of 1st , 3rd , 5th
 digit number._
