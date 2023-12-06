@@ -1,6 +1,6 @@
 # [Assignment_04](https://classroom.google.com/u/1/c/NjIyMTg5NDc5MTk0/a/NTI0MzIxMDM4ODI3/details)
 
-## Code-01
+## [Code-01](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code01.c)
 
 _1. Write a C program to print day of week name using switch case._
 
@@ -45,7 +45,7 @@ int main()
 }
 ```
 
-## Code-02
+## [Code-02](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code02.c)
 
 _2. Write a C program print total number of days in a month using switch case._
 
@@ -77,7 +77,7 @@ int main()
 }
 ```
 
-## Code-03
+## [Code-03](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code03.c)
 
 _3. Write a C program to check whether an alphabet is vowel or consonant using switch case._
 
@@ -107,7 +107,7 @@ int main()
 }
 ```
 
-## Code-04
+## [Code-04](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code04.c)
 
 _4. Write a C program to find maximum between two numbers using switch case._
 
@@ -143,7 +143,7 @@ int main()
 }
 ```
 
-## Code-05
+## [Code-05](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code05.c)
 
 _5. Write a C program to check whether a number is even or odd using switch case._
 
@@ -175,7 +175,7 @@ int main()
 }
 ```
 
-## Code-06
+## [Code-06](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code06.c)
 
 _6. Write a C program to check whether a number is positive, negative or zero using switch case._
 
@@ -210,7 +210,7 @@ int main()
 }
 ```
 
-## Code-07
+## [Code-07](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code07.c)
 
 _7. Write a C program to find roots of a quadratic equation using switch case._
 
@@ -258,7 +258,7 @@ int main()
 
 ```
 
-## Code-08
+## [Code-08](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment04/code08.c)
 
 _8. Write a C program to create Simple Calculator using switch case._
 
