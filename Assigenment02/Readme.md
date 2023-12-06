@@ -310,4 +310,3 @@ int main()
 
     printf("Sum = %d\nDiff = %d",sum,diff);
 }```
-````
