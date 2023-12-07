@@ -1,6 +1,6 @@
 # [Assignment_03](https://classroom.google.com/u/1/c/NjIyMTg5NDc5MTk0/a/NjIyNjM1NjM0MDgx/details)
 
-## [Code-01](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code01.c)
+## [Code-01](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code01.c)
 
 _1. Write a C program to check whether a number is negative, positive or zero._
 
@@ -22,7 +22,7 @@ int main()
 }
 ```
 
-## [Code-02](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code02.c)
+## [Code-02](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code02.c)
 
 _2. Write a C program to check whether a number is divisible by 5 and 11 or not._
 
@@ -44,7 +44,7 @@ int main()
 }
 ```
 
-## [Code-03](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code03.c)
+## [Code-03](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code03.c)
 
 _3. Write a C program to check whether a number is even or odd._
 
@@ -65,7 +65,7 @@ int main()
 }
 ```
 
-## [Code-04](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code04.c)
+## [Code-04](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code04.c)
 
 _4. Write a C program to input any character and check whether it is alphabet, digit or special character._
 
@@ -90,7 +90,7 @@ int main()
 }
 ```
 
-## [Code-05](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code05.c)
+## [Code-05](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code05.c)
 
 _5. Write a C program to check whether a character is uppercase or lowercase alphabet._
 
@@ -111,7 +111,7 @@ int main()
 }
 ```
 
-## [Code-06](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code06.c)
+## [Code-06](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code06.c)
 
 _6. Write a C program to print the English word of a digit like (One, Two,Three,......,Nine) if Digit is between 1 to 9,Otherwise tell whether its Even or Odd if Digit is greater than 9._
 
@@ -132,7 +132,7 @@ int main()
 }
 ```
 
-## [Code-07](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code07.c)
+## [Code-07](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code07.c)
 
 _7. Write a C program to enter month number and print total number of days in month. (Excluding Leap
 Year)_
@@ -165,7 +165,7 @@ int main()
 }
 ```
 
-## [Code-08](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code08.c)
+## [Code-08](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code08.c)
 
 _8. Write a C program to input angles of a triangle and check whether triangle is valid or not._
 
@@ -185,7 +185,7 @@ int main()
 }
 ```
 
-## [Code-10](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code10.c)
+## [Code-10](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code10.c)
 
 _10. Write a C program to calculate the Area of two rectangles and print the length and breadth of the
 rectangle whose Area is greater._
@@ -222,7 +222,7 @@ int main()
 }
 ```
 
-## [Code-11](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code11.c)
+## [Code-11](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code11.c)
 
 _11.Write a C program to find all roots of a quadratic equation._
 
@@ -259,7 +259,7 @@ int main()
 }
 ```
 
-## [Code-12](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code12.c)
+## [Code-12](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code12.c)
 
 _12. Write a C program to check whether triangle is equilateral, scalene or isosceles Input: all sides Length_
 
@@ -281,7 +281,7 @@ int main()
 }
 ```
 
-## [Code-13](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code13.c)
+## [Code-13](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code13.c)
 
 _13. Write a C program to input electricity unit charges and calculate total electricity bill according to the
 given_
@@ -321,7 +321,7 @@ int main()
 }
 ```
 
-## [Code-14](https://github.com/pawan6307032/Training-and-Placement/blob/main/Assignment03/code14.c)
+## [Code-14](https://github.com/PawanKumar85/Training-and-Placement/blob/main/Assignment03/code14.c)
 
 _14. Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer._
 
