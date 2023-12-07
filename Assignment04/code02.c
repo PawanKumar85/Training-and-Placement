@@ -13,7 +13,7 @@ int main()
             printf("%s with 31 days",month[i-1]);
         break;
         case 4:case 6:case 9: case 11:
-            printf("%s with 30 days",month[i - 1]);
+            printf("%s with 30 days",month[i - 1]); 
         break;
         case 2:
             printf("%s with 28 or 29 days(leap year)",month[i - 1]);
