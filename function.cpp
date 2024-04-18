@@ -27,7 +27,7 @@ template <typename T,typename U>
 void findMax(T x,U y)
 {
     T z = (x > y) ? x : y;
-    cout << z;
+    cout << z << endl;
 }
 
 
@@ -35,6 +35,7 @@ int main()
 {
     
     findMax(10,30);
+    findMax(10.9,30.6);
     
     return 0;
 }
