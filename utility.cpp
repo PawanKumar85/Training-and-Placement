@@ -108,11 +108,13 @@ int main()
                 cin >> x;
 
                 if(arr.getValue(x))
-                    cout << "Index of " << x << " is " << arr.getValue(x1);
+                    cout << "Index of " << x << " is " << arr.getValue(x);
                 else
                     cout << "value is not present";
                 cout  << endl;
                 break;
+            case 6:
+                exit(0);
             default:
                 cout << "Please enter valid choice" << endl;
         }
