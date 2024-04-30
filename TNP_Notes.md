@@ -214,4 +214,189 @@ int main()
 }
 ```
 
+# Date : 30 - 04 - 2024 (Tuesday)
+
+## Function Pointer
+
+* **Function pointer** is a powerful concept that allows you to store the memory address of a function. You can use function pointers to invoke functions dynamically, pass them as arguments to other functions, and even simulate call-by-reference behavior.
+
+```
+    #include <iostream>
+    using namespace std;
+
+    void show(int x)
+    {
+        cout << "Pawan" << x;
+    }
+
+    int main()
+    {
+        void (*fptr)(int) = &show;
+        (*fptr)(10);
+        return 0;
+    }
+```
+Alternative,
+```
+    #include <iostream>
+    using namespace std;
+
+    void show(int x)
+    {
+        cout << "Pawan" << x;
+    }
+
+    int main()
+    {
+        void (*fptr)(int) = show;
+        fptr(10);
+        return 0;
+    }
+```
+
+## Example 01
+
+```
+#include <iostream>
+using namespace std;
+
+void add(int x,int y)
+{
+    cout << "ADD :" << x + y;
+}
+
+void sub(int x,int y)
+{
+    cout << " SUB :" << x - y;
+}
+
+void multi(int x,int y)
+{
+    cout << " MULTI :" << x * y;
+}
+
+int main()
+{
+    void (*fptr[])(int,int) = {add,sub,multi};
+    int a = 10;
+    int b = 20;
+    
+    int ch;
+    cin >> ch;
+
+    (*fptr[ch])(a,b);
+
+    return 0;
+}
+```
+
+## Lambda Expression (C++ 11)
+* It remove the complexity of function pointer.
+* It is also called as anonymous function.
+* It is inline anonymous function as an expression to initialize the function pointer.
+* By calling function pointer we can run the set of statement of lambda expression.
+* In the default case, it does not have access to any of the variable - with in the main function.
+* To get the access to those,it is required to make some modification to the capture list of expression.
+* Syntax
+```
+[capture list] (parameter list) -> return type {
+    function body
+}
+```
+## Code - 01
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    void (*ptr)() = [] {cout << "Pawan";};
+
+    auto ptr1 = [] {cout << "Pawan";};
+
+    ptr();
+    return 0;
+}
+```
+
+## Code - 02
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    void (*ptr)() = [] {
+        int x = 10;
+        int y = 20;
+        int z - x + y;
+        cout << z;
+    };
+
+    ptr();
+    return 0;
+}
+```
+
+## Code - 03
+**Lambda Expression non parametrise.**
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int x = 10,y = 20,z; // it means x and y are const but z is modifiable
+
+   auto ptr = [=,&z](){
+    z = x + y;
+    cout << "Value is : " << z;
+   };
+   ptr();
+   return 0;
+}
+```
+
+## Code - 04
+**Lambda Expression with parametrise.**
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   auto ptr = [=](int x,int y,int &z)
+   {
+    z = x + y;
+    cout << z << endl;
+   };
+
+    int a = 10,b = 20,c = 0;
+    cout << c << endl;
+    ptr(a,b,c);
+    cout << c << endl;
+    return 0;
+}
+```
+
+## Code - 05
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int m = 2,n = 3;
+   auto ptr = [=](int x,int y,int &z)
+   {
+    z = x + y + m + n;
+   };
+
+    int a = 10,b = 20,c = 0;
+    cout << c << endl;
+    ptr(a,b,c);
+    cout << c << endl;
+    return 0;
+}
+```
 
