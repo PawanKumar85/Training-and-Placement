@@ -422,3 +422,204 @@ int main()
     return 0;
 } 
 ```
+
+# 01 - 05 - 2024 (Wednesday)
+## Exception Handling
+
+An Exception is abnormal condition that arises during the running of program our program is terminated suddenly with some error.
+
+Exception occurs during the running of the program (run time).
+### Handler
+* **try**
+    * _The try block is used to enclose the code that might throw an exception. When an exception is thrown within a try block, the control is transferred to the corresponding catch block, which handles the exception._
+* **catch**
+    * _The catch block is used to handle exceptions that are thrown within a try block. When an exception is thrown within a try block, the control is transferred to the corresponding catch block, which handles the exception._
+* **throw**
+   *  _The throw keyword is used to throw an exception in C++. When an exception is thrown, the control is transferred to the nearest enclosing try block, which handles the exception._
+
+
+## Code - 01
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout <<"Hello";
+    cout <<"Java";
+    cout << string("Hello H R U") << endl; // correct
+    cout << string("Hello H R U").substr(5) << endl; // correct
+    cout << string("Hello H R U").substr(15) << endl; // flash error
+    cout <<"Pawan";
+    return 0;
+}
+```
+
+**Output:** *(Error)*
+```
+HelloJavaHello H R U
+ H R U
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::substr: __pos (which is 15) > this->size() (which is 11)
+```
+
+## Remove the Exception Handling
+```
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+int main()
+{
+    cout <<"Hello";
+    cout <<"Java";
+    try{
+        cout << string("Hello H R U").substr(5) << endl;
+    }
+    catch(out_of_range &e)
+    {
+        cout << e.what() << endl;
+    }
+    cout << "Pawan" << endl;
+    return 0;
+}
+```
+
+## Code - 02
+```
+#include <iostream>
+#include <stdexcept>
+#include <exception>
+using namespace std;
+
+int main()
+{
+    int x = 10;
+    int y = 0; // try y = 3;
+    int z;
+
+    try
+    {
+        if (y == 0)
+            throw "Zero Divison Error";
+        z = x / y;
+        cout << z << endl;
+    }
+
+    catch (const char *e)
+    {
+        cout << e << endl;
+    }
+
+    cout << "Pawan";
+    return 0; 
+}
+```
+**Output** : 
+```
+Zero Divison Error
+Pawan
+```
+
+Alternative : **(Good Practice)**
+```
+#include <iostream>
+#include <stdexcept>
+#include <exception>
+using namespace std;
+
+int main()
+{
+    int x = 10;
+    int y = 0; // try y = 3;
+    int z;
+
+    try
+    {
+        if (y == 0)
+            throw runtime_error("Zero Divison Error");
+        z = x / y;
+        cout << z << endl;
+    }
+
+    catch (runtime_error &e)
+    {
+        cout << e.what() << endl;
+    }
+
+    cout << "Pawan";
+    return 0; 
+}
+```
+
+## Code - 03
+If there are multiple catch() in the program then the catch() with the most specific exception type should be written first.
+
+```
+#include <iostream>
+#include <stdexcept>
+#include <exception>
+using namespace std;
+
+int main()
+{
+    try{
+        // try each comment  
+
+        // throw "Some Error";
+        // throw 10;
+        // throw runtime_error("Error");
+    }
+    catch(const char *e){
+        cout << "String " << e << endl;
+    }
+    catch(int x){
+        cout << "int " << x << endl;
+    }
+    catch(runtime_error){
+        cout <<"run time"<<e.what()<< endl;
+    }
+    return 0;
+}
+```
+Alternative : **(Good Practice)**
+```
+#include <stdexcept>
+#include <exception>
+using namespace std;
+
+int main()
+{
+    try{
+        // try each comment  
+
+        throw "Some Error";
+        throw 10;
+        throw runtime_error("Error");
+    }
+    catch(...) 
+    {
+        cout << "Some Error" << endl;
+    }
+    return 0;
+}
+```
+
+## Properties of Exceptions
+There is a special cstch block called **catch all** block, written as **catch(...)** which can catch all types of exceptions.
+
+- Exceptions are objects
+- Exceptions are thrown using throw
+- Exceptions are caught using catch
+- Exceptions are handled using try and catch
+
+**Notes** : 
+In c++, all exceptions are unchecked i.e the compiler does not check whether the exception is handled or not.
+
+So,it is not neccessary to specify all uncatch exceptions in a function declation.
+
+
+
+
+
+
+
