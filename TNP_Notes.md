@@ -617,6 +617,74 @@ In c++, all exceptions are unchecked i.e the compiler does not check whether the
 
 So,it is not neccessary to specify all uncatch exceptions in a function declation.
 
+## Code - 04
+```
+#include <iostream>
+#include <stdexception>
+using namespace std;
+
+class OverSpeed : public exception
+{
+    int speed;
+    public:
+    const char * what() const throw()
+    {
+        return "Check Your Car Speed";
+    }
+    void setSpeed(int speed)
+    {
+        this.speed = speed;
+    }
+    void getSpeed()
+    {
+        cout << "Your Speed : " << speed; 
+    }
+};
+
+class Car{
+    public:
+    Car()
+    {
+        this.speed = 0;
+        cout << "Your Car speed : << speed << endl;
+    }
+
+    void speedLimit()
+    {
+        for(;;)
+        {
+            speed += 10;
+            cout << "Your Car speed : << speed << endl;
+
+            if(speed > 100)
+            {
+                OverSpeed s;
+                s.setSpeed(speed);
+                throw s;
+            }
+        }
+    }
+};
+
+int main()
+{
+    Car obj;
+    try{
+        obj.speedLimit();
+    }
+    catch(Overspeed s)
+    {
+        cout << s.what();
+        s.getSpeed();
+    }
+    return 0;
+}
+```
+
+## Smart Pointer
+A smart pointer is a template class over a pointer with an operator like `->` and `*` overload.
+
+The object of the smart pointer close look like normal pointers. But.unlike Normal pointer,it can deallocate and free destroyed object memory. 
 
 
 
