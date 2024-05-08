@@ -18,11 +18,18 @@ private:
     float basicSalary;
 
 public:
-    Employee(int code, float salary)
+    Employee()
     {
-        this->empCode = code;
-        this->basicSalary = salary;
+        this->empCode = 0;
+        this->basicSalary = 0.0;
     }
+
+    void setDetail(int empCode, float basicSalary)
+    {
+        this->empCode = empCode;
+        this->basicSalary = basicSalary;
+    }
+
     float calculateNetSalary()
     {
         float DA = 1.74 * basicSalary;
@@ -39,17 +46,29 @@ public:
         cout << endl;
         cout << "Employee Code: " << empCode << endl;
         cout << "Basic Salary: " << basicSalary << endl;
-        cout << "Net Salary: " << calculateNetSalary() << endl;
+        cout << "Net Salary: " << this->calculateNetSalary() << endl;
     }
 };
 
 int main()
 {
 
-    Employee emp1(1234, 60000);
-    emp1.display();
+    Employee empArray[5];
+    for (int i = 0; i < 5; i++)
+    {
+        int code;
+        float salary;
+        cout << "Enter details for employee " << (i + 1) << ":" << endl;
+        cout << "Enter Employee Code: ";
+        cin >> code;
+        cout << "Enter Basic Salary: ";
+        cin >> salary;
+        empArray[i].setDetail(code, salary);
+    }
 
-    Employee emp2(85440, 10000);
-    emp2.display();
+    for (int i = 0; i < 5; i++)
+    {
+        empArray[i].display();
+    }
     return 0;
 }
