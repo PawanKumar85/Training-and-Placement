@@ -29,10 +29,16 @@ int main()
 {
     Employee employee1(101, 50000.0);
     Employee employee2(102, 60000.0);
+    Employee employee3(103, 70000.0);
+    Employee employee4(104, 80000.0);
     employee1.numObjects++;
     employee2.numObjects++;
+    employee3.numObjects++;
+    employee4.numObjects++;
     employee1.displayEmployee();
     employee2.displayEmployee();
+    employee3.displayEmployee();
+    employee4.displayEmployee();
     Employee::countObjects();
 
     return 0;

@@ -912,3 +912,155 @@ int main()
     return 0;
 }
 ```
+
+# DMA in c++ (Date : 11 - 05 - 2024)
+
+DMA 
+new and delete keyword
+it is implemented by operators in c++ and it is implemented by function in c
+## DMA in c
+* malloc()
+* calloc()
+* realloc()
+*  free()
+
+## DMA in c++
+* new
+* delete
+
+
+
+### Notes: (For DSA)
+    * Pointer
+    * DMA
+    * Linked List
+
+## Code 
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int *p = new int;
+    *p = 786;
+    cout << *p;             // output : 786
+    return 0;
+}
+```
+# Code 02
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int *p = new int(4);
+    int *ptr = new int[4];
+    int (*pt)[] = new int[4];
+
+    cout << sizeof(p) << endl;
+    cout << sizeof(ptr) << endl;
+    cout << sizeof(pt) << endl;  
+    return 0;
+}
+```
+
+## Code 03
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int *p = new int(4);
+    int *ptr = new int[4];
+
+    cout << sizeof(p) << endl;
+    cout << sizeof(ptr) << endl;
+    cout << sizeof(*p) << endl;
+    cout << sizeof(*ptr) << endl;
+    return 0;
+}
+```
+
+# Code 04
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "enter size of int block : ";
+    cin >> n;
+
+    int *ptr = new int[n];
+
+    cout << sizeof(ptr) << endl;
+    cout << n * sizeof(int) << endl;
+    return 0;
+}
+```
+
+# Code 05
+```
+#include <iostream>
+#include <malloc.h>
+using namespace std;
+
+int main()
+{
+    cout << "think career think hardwork" << endl;
+    int n = 3857285980244132453454532;
+    int *p = (int*) malloc(n* sizeof(int));
+    int *ptr = new int[n];
+
+    cout << "think Maharana !! ";
+    return 0;
+}
+```
+
+Again,
+```
+#include <iostream>
+#include <malloc.h>
+using namespace std;
+
+int main()
+{
+    cout << "think career think hardwork" << endl;
+    // int n = ;
+    // int *p = (int*) malloc(n* sizeof(int));
+    // int n = 99999999999999999;
+    try
+    {
+        int *ptr = new int[99999999999999999];
+    }
+    catch(bad_alloc &e)
+    {
+        cout << e.what();
+    }
+
+    cout << "think Maharana !! ";
+    return 0;
+}
+```
+
+## Revision 
+    * Pointer
+    * DMA
+    * Array
+
+## Alternative
+```
+int *p = new int;
+delete p;
+int *ptr = new int[10];
+delete[] ptr;
+``` 
+
+
+
+
+
