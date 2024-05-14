@@ -154,7 +154,7 @@ Iterators are objects that provide a way to travers the elements of a containers
 - count()
 - find() ---> _// time complexity = O(n)_
 - remove()
-- binary_search(v.begin(),v.end(),val) ---> _// it return bool value // time complexity = O(nlog(n))_
+- binary*search(v.begin(),v.end(),val) ---> *// it return bool value // time complexity = O(nlog(n))\_
 - fill()
 - swap()
 - .at(index);
@@ -915,27 +915,30 @@ int main()
 
 # DMA in c++ (Date : 11 - 05 - 2024)
 
-DMA 
+DMA
 new and delete keyword
 it is implemented by operators in c++ and it is implemented by function in c
+
 ## DMA in c
-* malloc()
-* calloc()
-* realloc()
-*  free()
+
+- malloc()
+- calloc()
+- realloc()
+- free()
 
 ## DMA in c++
-* new
-* delete
 
-
+- new
+- delete
 
 ### Notes: (For DSA)
+
     * Pointer
     * DMA
     * Linked List
 
-## Code 
+## Code
+
 ```
 #include <iostream>
 using namespace std;
@@ -948,7 +951,9 @@ int main()
     return 0;
 }
 ```
+
 # Code 02
+
 ```
 #include <iostream>
 using namespace std;
@@ -961,12 +966,13 @@ int main()
 
     cout << sizeof(p) << endl;
     cout << sizeof(ptr) << endl;
-    cout << sizeof(pt) << endl;  
+    cout << sizeof(pt) << endl;
     return 0;
 }
 ```
 
 ## Code 03
+
 ```
 #include <iostream>
 using namespace std;
@@ -985,6 +991,7 @@ int main()
 ```
 
 # Code 04
+
 ```
 #include <iostream>
 using namespace std;
@@ -1004,6 +1011,7 @@ int main()
 ```
 
 # Code 05
+
 ```
 #include <iostream>
 #include <malloc.h>
@@ -1022,6 +1030,7 @@ int main()
 ```
 
 Again,
+
 ```
 #include <iostream>
 #include <malloc.h>
@@ -1047,20 +1056,129 @@ int main()
 }
 ```
 
-## Revision 
+## Revision
+
     * Pointer
     * DMA
     * Array
 
 ## Alternative
+
 ```
 int *p = new int;
 delete p;
 int *ptr = new int[10];
 delete[] ptr;
-``` 
+```
+
+# 14 - 05- 2024 (Tuesday)
+
+## Code
+
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int *p = new int;
+    *p = 76;
+    cout << *p << endl;
+    delete p;
+    new int(34);
+    cout << *p;
+    return 0;
+}
+```
+
+### Output
+
+```
+76
+34
+```
+
+#### Reason 
+* `new` is a keyword which is used to allocate memory dynamically.`
+* `delete` is a keyword which is used to deallocate memory dynamically.
 
 
 
+## Code
+
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int *p = new int;
+    *p = 76;
+    cout << *p << endl;
+    // delete p;
+    new int(34);
+    cout << *p;
+    return 0;
+}
+```
+
+### Output
+
+```
+76
+76
+```
+
+## Code
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int *p = new int;
+    *p = 76;
+    cout << *p << " " << "Address : "<< p << endl;
+    // delete p;
+    p = new int(34);
+    cout << *p << "Address : " << p << endl;
+    return 0;
+}
+```
+
+### Outpur
+```
+76 Address : 20352
+34 Address : 34562
+```
+
+# Data structure
+* Data which give information 
+* when a data is placed in structed manner to give information
+* DS is the way to organize the data in such a way that we can use it efficentily `(In terms of time and space)`
+* DS is a collection of data and the relationship between them
+* `Arrangement of data`
+* `Efficient way => Time and Space Complexity`
+
+## Data types
+```
+1. Domain of values
+2. Operations allowed on value
+3. ADT (Abstract data type) -> **(C++ only)
+```
+
+```
+1. Primitive Data type
+    * int - a,b,c
+        Domain of values -> 23,56,3,52,6,24
+        Operations allowed -> +,-,*,/,%,Bitwise operation
+        
+    * float
+        Domain of values -> 3.3,68.23,7.24
+        Operations allowed -> +,-,*,/
+        Not Allowed -> %,Bitwise operation
 
 
+2.  User Define Data type
+
+```
